@@ -1,0 +1,10 @@
+on: workflow_dispatch
+name: testando
+jobs:
+  testando01:
+    steps:
+      - name: step-01
+        run: |
+          sleep 60
+          uname -a
+  
