@@ -2,7 +2,11 @@ on: workflow_dispatch
 name: testando
 jobs:
   testando01:
-    runs-on: Linux
+Host github.com
+    Hostname github.com
+    IdentityFile ~/.ssh/id_rsa_git_stone
+    IdentitiesOnly yes # see NOTES below
+    runs-on: ubuntu-latest
     steps:
       - name: step-01
         run: |
