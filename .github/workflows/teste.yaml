@@ -2,6 +2,7 @@ on: workflow_dispatch
 name: testando
 jobs:
   testando01:
+    runs-on: Linux
     steps:
       - name: step-01
         run: |
