@@ -9,7 +9,8 @@ jobs:
           sleep 10
           while true                                                                                                                                                                                                  1 
             do
-              exit "$(date +%N)%2" | bc
+              ec=$( "$(date +%N)%2" | bc )
+              exit $ec
             done
 
   
