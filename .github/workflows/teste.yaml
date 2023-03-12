@@ -6,6 +6,10 @@ jobs:
     steps:
       - name: step-01
         run: |
-          sleep 60
-          uname -a
+          sleep 10
+          while true                                                                                                                                                                                                  1 
+            do
+              exit "$(date +%N)%2" | bc
+            done
+
   
